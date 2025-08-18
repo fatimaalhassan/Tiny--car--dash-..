@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiny Car Dash</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <audio controls loop muted autoplay>
+        <source src="music.mp3"tybe="audio/mpeg">
+    </audio>
+
+  <div id="start-screen">
+    <img src="assets/start.png" alt="Start Game" id="start-image" />
+    <button id="start-btn">Start</button>
+  </div>
+
+<div id="car-selection" >
+  <h2>Pick Your Car</h2>
+  <button class="car-option red" data-color="red">🚗 Red</button>
+  <button class="car-option blue" data-color="blue">🚙 Blue</button>
+  <button class="car-option green" data-color="green">🏎️ Green</button>
+</div>
+
+  <div id="game-container" class="hidden">
+    <div id="hud">
+      <span>Score: <span id="score">0</span></span>
+      <span>Time: <span id="timer">10</span></span>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+    
+     
+
+    <div id="buttons">
+      <img src="assets/redbtn.png" id="red-btn" class="color-btn" data-color="red" alt="Red Button" />
+      <img src="assets/bluebtn.png" id="blue-btn" class="color-btn" data-color="blue" alt="Blue Button" />
+      <img src="assets/greenbtn.png" id="green-btn" class="color-btn" data-color="green" alt="Green Button" />
+    </div>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <h2 id="result-text"></h2>
+    <button id="play-again-btn">Play Again</button>
+  </div>
+
+  <script defer src="./js/app.js"></script>
+</body>
+</html>
