@@ -9,6 +9,7 @@ As a user, I want to see my car and the track displayed clearly so I understand 
  As a user, I want to get a “You Win!” or “You Lose!” message at the end of the race so I know the outcome.
  As a user, I want an option to play again so I can try to win or improve my time.
 
+![Screenshot_23-8-2025_9462_127 0 0 1](https://github.com/user-attachments/assets/c241f2d3-ab5a-4fd6-86b3-342397cff6a1)
 
 ⸻
 Game Flow – Tiny Car Dash 🏁
