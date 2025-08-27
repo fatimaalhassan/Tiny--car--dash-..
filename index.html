@@ -5,23 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tiny Car Dash</title>
   <link rel="stylesheet" href="./css/style.css" />
+  <style>
+    .instructions {
+      background: rgba(127, 167, 209, 0.9);
+      color: #000;
+      padding: 15px;
+      margin: 15px auto;
+      border-radius: 12px;
+      max-width: 400px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 1.5;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .instructions h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
     <audio controls loop muted autoplay>
-        <source src="music.mp3"tybe="audio/mpeg">
+        <source src="music.mp3" type="audio/mpeg">
     </audio>
 
   <div id="start-screen">
     <img src="assets/start.png" alt="Start Game" id="start-image" />
+    
+    <div id="instructions" class="instructions">
+      <h2>📜 How to Play</h2>
+      <ul>
+        <li>Choose your favorite car from the selection menu.</li>
+        <li>Press <b>Start</b> to begin the race.</li>
+        <li>Colored buttons will appear below the track.</li>
+        <li>If you press the button that matches your car’s color, your speed increases by +1.</li>
+        <li>If you press the wrong color, your speed decreases.</li>
+        <li>The winner is the car that goes the farthest before the timer ⏰ runs out.</li>
+      </ul>
+    </div>
+
     <button id="start-btn">Start</button>
   </div>
 
-<div id="car-selection" >
-  <h2>Pick Your Car</h2>
-  <button class="car-option red" data-color="red">🚗 Red</button>
-  <button class="car-option blue" data-color="blue">🚙 Blue</button>
-  <button class="car-option green" data-color="green">🏎️ Green</button>
-</div>
+  <div id="car-selection" >
+    <h2>Pick Your Car</h2>
+    <button class="car-option red" data-color="red">🚗 Red</button>
+    <button class="car-option blue" data-color="blue">🚙 Blue</button>
+    <button class="car-option green" data-color="green">🏎️ Green</button>
+  </div>
 
   <div id="game-container" class="hidden">
     <div id="hud">
@@ -31,8 +62,6 @@
 
     <canvas id="gameCanvas" width="800" height="500"></canvas>
     
-     
-
     <div id="buttons">
       <img src="assets/redbtn.png" id="red-btn" class="color-btn" data-color="red" alt="Red Button" />
       <img src="assets/bluebtn.png" id="blue-btn" class="color-btn" data-color="blue" alt="Blue Button" />

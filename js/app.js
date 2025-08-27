@@ -3,7 +3,7 @@ const colors = ["red", "blue", "green"];
 
 /*---------- Variables (state) ---------*/
 let playerCar = { x: 50, y: 100, speed: 0, color: "red" };
-let opponentCar = { x: 50, y: 200, speed: 2, color: "blue" };
+let opponentCar = { x: 50, y: 100, speed: 1, color: "blue" };
 let timeLeft = 10;
 let raceInterval, timerInterval;
 
@@ -63,14 +63,14 @@ function setgreenCar(){
 
 function startRace(){
   timeLeft = 10;
-  playerCar.x = 40;
+  playerCar.x = 30;
   playerCar.y = streetY;
-  opponentCar.x = 40;
+  opponentCar.x = 30;
   opponentCar.y = streetY; 
   playerCar.speed = 0;
   opponentCar.speed = 2;
 
-  timerEl.textContent = timeLeft;
+  timerEl.textContent = timeLeft; 
 
   raceInterval = setInterval(updateRace, 1000 / 60);
   timerInterval = setInterval(() => {
@@ -160,3 +160,4 @@ greenBtn.addEventListener("click", () => {
     playerCar.speed = Math.max(1, playerCar.speed - 1);
   }
 });
+
