@@ -29,7 +29,7 @@ Game Flow – Tiny Car Dash 🏁
 
 
 link of the game:
-https://fatimaalhassan.github.io/Browser-project-game-Tiny-car-dash-/
+https://fatimaalhassan.github.io/Tiny-Car-Dash/
 
 
 Referencees:
